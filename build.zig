@@ -8,6 +8,7 @@ pub fn build(b: *std.Build) void {
     const ogg_dep = b.dependency("ogg", .{ .target = target, .optimize = optimize });
 
     const lib = b.addStaticLibrary(.{
+        .pic = true,
         .name = "opusfile",
         .target = target,
         .optimize = optimize,
