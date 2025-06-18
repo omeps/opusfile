@@ -1,0 +1,25 @@
+.{
+    .fingerprint = 0xc8c752341a08d369,
+    .name = .opusfile,
+    .version = "0.0.0",
+    .paths = .{
+        "include",
+        "src",
+        "build.zig",
+        "build.zig.zon",
+        "COPYING",
+        "README.md",
+        "update.sh",
+        "verify.sh",
+    },
+    .dependencies = .{
+        .opus = .{
+            .url = "git+https://github.com/omeps/opus#bd2505d3ce03d813f60acbcea3d6eac0a10227ec",
+            .hash = "12201250ac78d1b36b424e5598d6982f87975c7d279d471ae8f7565af43ac63b3354",
+        },
+        .ogg = .{
+            .url = "git+https://github.com/omeps/ogg#9fa8e8be7abc445b4f1dd3944a0c840749abbf60",
+            .hash = "12204bd3f06c22251a3582ee71cc14fabe913fbadc040b1cc668f25435a6dca4566c",
+        },
+    },
+}
